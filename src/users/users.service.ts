@@ -73,4 +73,7 @@ export class UsersService {
       };
     }
   }
+  async fundById(id: number): Promise<User> {
+    return this.users.findOne({ id });
+  }
 }
